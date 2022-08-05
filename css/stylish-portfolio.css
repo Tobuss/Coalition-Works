@@ -444,3 +444,9 @@ ul.social-icons {
     background-color: #0073a4;
 }
 
+@media screen and (min-width: 780px) {
+  .full-width-img {
+  margin: auto;
+  width: 90%;
+  }
+}
