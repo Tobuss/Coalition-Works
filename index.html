@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Coalition Works</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand"><a href="">Menu</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#Books">Books</a></li>
+        <li><a href="#About">About</a></li>
+
+      </ul>
+    </div>
+    <!-- /Side Menu -->
+  
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+      <div class="vert-text-Title">
+        <h1>Coalition Works</h1>
+        <h3>Sharing our love for fantasy.</h3>
+
+      </div>
+    </div>
+    
+    <!-- /Full Page Image Header Area -->
+  
+    <!-- Intro -->
+    <div id="Books" class="headerbook">
+      <div class="vert-text-sector">
+        <h1>Books</h1>
+      </div>
+    </div>
+    <section class="section">
+      <img src="img/solivity.jpg" class="image" width=25% height=25%/>
+      <div class="content">
+    
+        <h2 class="title">
+          Solivity
+        </h2>
+        <p class="paragraph">
+    
+          The Solivity series is my first series and novel, set in what I deem a Middle Fantasy setting. The book follows the adventures of a group of young Wolves as they are forced out of their home and into an adventure to try and prevent a war from errupting. 
+          I maintain a wiki with all of the most up to date information available in the current state of the series.
+        </p>
+        <a href="https://solivity.com/">
+        <button class="button-35" role="button">Solivity Wiki</button>
+        </a>
+      </div>
+    </section>
+    <!-- /Intro -->
+  
+    <br>  <br>  <br><br><br><br><br><br><br><br><br>
+
+    <!-- About -->
+    <div id="About" class="headerbook">
+      <div class="vert-text-sector">
+        <h1>About Us</h1>
+      </div>
+    </div>
+    <section class="section-about">
+      <img src="img/toby.png" class="image" width=25% height=25%/>
+      <div class="content">
+    
+        <h2 class="title">
+          Toby Waterworth
+        </h2>
+        <p class="paragraph">
+    
+          Fill stuff in here
+        </p>
+        <br>
+        <div class="footer-social-icons">
+          <h4 class="_14">Follow on</h4>
+          <ul class="social-icons">
+              <li><a href="https://twitter.com/T0busss" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/twaterworth/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <!-- /About -->
+
+   
+
+
+    
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+
+            <div class="top-scroll">
+              <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
+            </div>
+            <hr>
+            <p>Copyright &copy; Coalition Works</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+
+  </body>
+
+</html>
